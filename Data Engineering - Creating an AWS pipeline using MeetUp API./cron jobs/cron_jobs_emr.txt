@@ -1,0 +1,2 @@
+0 */1 * * * sh /home/hadoop/emr_html_s3.sh
+0 */2 * * * spark-submit /home/hadoop/spark_meetup_time_df.py s3a://dsci6007-firehose-final-project/meet_up2017/*/*/*/* && spark-submit /home/hadoop/spark_meetup_time_rdd.py s3a://dsci6007-firehose-final-project/meet_up2017/*/*/*/*

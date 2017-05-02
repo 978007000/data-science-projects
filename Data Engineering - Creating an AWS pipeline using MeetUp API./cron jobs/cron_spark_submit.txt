@@ -1,0 +1,5 @@
+0 */2 * * * spark-submit /home/hadoop/spark-submit spark_meetup_df.py s3a://dsci6007-firehose-final-project/meet_up2017/*/*/*/* 
+0 */2 * * * spark-submit /home/hadoop/spark-submit spark_meetup_rdd.py s3a://dsci6007-firehose-final-project/meet_up2017/*/*/*/*
+
+
+

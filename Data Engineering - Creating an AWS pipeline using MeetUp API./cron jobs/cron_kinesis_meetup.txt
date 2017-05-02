@@ -1,0 +1,1 @@
+0 * * * * /home/ubuntu/meet_up_kinesis.py && curl -sm 30 k.wdt.io/carles.poles@gmail.com/meetup_firehose_s3?c=0_*_*_*_*

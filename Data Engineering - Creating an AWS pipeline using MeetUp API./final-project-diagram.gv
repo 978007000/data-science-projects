@@ -1,0 +1,57 @@
+// Data Model
+digraph {
+	graph [rankdir=LR]
+	label = "Final Project: MeetUp Streaming"
+		subgraph cluster_0 {
+			node [color=white style=filled]
+			style=filled
+			color=dimgray
+			label = "AWS"
+				EC2 [shape=octagon]
+		}
+		subgraph cluster_1 {
+			node [color=white style=filled]
+			style=filled
+			color=dimgray
+			label = "AWS"
+				"EMR-Spark" [shape=octagon]
+		}
+		subgraph cluster_2 {
+			node [color=white style=filled]
+			style=filled
+			color=dimgray
+			label = "AWS"
+				"RDS-PostgreSQL" [shape=octagon]
+		}
+		subgraph cluster_3 {
+			node [color=white style=filled]
+			style=filled
+			color=lightgrey
+			label = "AWS"
+				"S3 (raw json)" [shape=octagon]
+		}
+		subgraph cluster_4 {
+			node [color=white style=filled]
+			style=filled
+			color=lightgrey
+			label = "AWS"
+				"S3 (3NF)" [shape=octagon]
+		}
+		MeetUp [shape=doubleoctagon]
+		"S3 (raw json)" [shape=parallelogram]
+		"S3 (3NF)" [shape=parallelogram]
+		"Web Client" [shape=parallelogram]
+		"e-mail(1)" [shape=parallelogram]
+		"e-mail(2)" [shape=parallelogram]
+			EC2 -> EC2 [label=cron]
+			"EMR-Spark" -> "EMR-Spark" [label=cron]
+			EC2 -> "e-mail(1)" [label="cron-email"]
+			"EMR-Spark" -> "e-mail(2)" [label="cron-email"]
+			MeetUp -> EC2 [label=GET]
+			EC2 -> "S3 (raw json)" [label="kinesis - firehose"]
+			"S3 (3NF)" -> "Web Client" [label=HTTP]
+			"S3 (raw json)" -> "EMR-Spark" [label="(1) load"]
+			"EMR-Spark" -> "S3 (3NF)" [label="(2) csv/text"]
+			"S3 (3NF)" -> "RDS-PostgreSQL" [label=ETL]
+			"RDS-PostgreSQL" -> "RDS-PostgreSQL" [label=VIEW]
+}
