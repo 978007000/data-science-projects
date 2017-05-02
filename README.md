@@ -7,7 +7,7 @@ This is an example of [combining machine learning with natural language processi
 
 ## 2 - Data Engineering.
 
-Using the [MeetUp API, a pipeline in Amazon Web Services (AWS)](Data Engineering - Creating an AWS pipeline using MeetUp API.) was implemented using Spark. A relational database using PostgreSQL was also implemented using MeetUp data. AirFlow was also implemented to schedule jobs.
+Using the [MeetUp API, a pipeline in Amazon Web Services (AWS)](Data%20Engineering%20-%20Creating%20an%20AWS%20pipeline%20using%20MeetUp%20API.) was implemented using Spark. A relational database using PostgreSQL was also implemented using MeetUp data. AirFlow was also implemented to schedule jobs.
 
 ## 3 - Deep Learning.
 
