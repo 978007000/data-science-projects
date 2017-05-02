@@ -3,7 +3,7 @@ This repository contains some Data Science projects that I have worked on in my 
 
 ## 1 - Machine Learning and Natural Language Processing.
 
-This is an example of [combining machine learning with natural language processing](Machine Learning & Natural Language Processing - Economic News Articles.) with a set of economic news articles to predict whether they are relevant or not.
+This is an example of [combining machine learning with natural language processing](Machine%20Learning%20%26%20Natural%20Language%20Processing%20-%20Economic%20News%20Articles.) with a set of economic news articles to predict whether they are relevant or not.
 
 ## 2 - Data Engineering.
 
