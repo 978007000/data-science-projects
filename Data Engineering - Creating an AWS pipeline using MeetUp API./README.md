@@ -1,5 +1,8 @@
 MeetUp Data Engineering Pipeline
 --------------------------------
+
+<img src='final-project-diagram.png'/>
+
 API documentation can be found here: https://www.meetup.com/meetup_api/docs/2/groups/
 
 We don't need to install any third party (MeetUp) application.
