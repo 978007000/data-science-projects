@@ -12,3 +12,7 @@ Using the [MeetUp API, a pipeline in Amazon Web Services (AWS)](Data%20Engineeri
 ## 3 - Deep Learning.
 
 Different convolutional neural network architectures were implemented to classify food images. Transfer learning using InceptionV3 was also implemented in Google Cloud. [The repository can be found here](https://github.com/carlespoles/DSCI6051-student).
+
+## 4 - Dashboard for business metrics and KPIs and EDA.
+
+During this internishp, I implemented a dashboard for different business metrics using Google Data Studio and Google Cloud Platform BigQuery. Also used Google Cloud Platform VM and Datalab. [The repository can be found here](https://github.com/carlespoles/DSCI6010-student).
